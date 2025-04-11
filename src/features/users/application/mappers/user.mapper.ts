@@ -1,8 +1,7 @@
-import { User } from '../../domain/entities/user.entity';
+// import { User } from '../../domain/entities/user.entity';
 
-// user.mapper.ts
-export class UserMapper {
-  static toDomain(raw: any): User {
-    return new User(raw.id, raw.name, raw.email);
-  }
-}
+// export class UserMapper {
+//   static toDomain(raw: any): User {
+//     return new User(raw.id, raw.name, raw.email);
+//   }
+// }

@@ -1,13 +1,17 @@
 import { IsEmail, IsString, MinLength } from 'class-validator';
 
 export class CreateUserDto {
-  @IsString()
+  // @IsString()
+  // readonly name: string;
+
+  // @IsEmail()
+  // readonly email: string;
+
+  // @IsString()
+  // @MinLength(8)
+  // readonly password: string;
+
   readonly name: string;
-
-  @IsEmail()
   readonly email: string;
-
-  @IsString()
-  @MinLength(8)
-  readonly password: string;
+  readonly age?: number;
 }
